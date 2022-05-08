@@ -1,0 +1,57 @@
+Start training...
+epoch: 1/10, step: 100/500, loss: 1.808
+epoch: 1/10, step: 200/500, loss: 1.745
+epoch: 1/10, step: 300/500, loss: 1.589
+epoch: 1/10, step: 400/500, loss: 1.412
+epoch: 1/10, step: 500/500, loss: 1.420
+epoch: 2/10, step: 100/500, loss: 1.194
+epoch: 2/10, step: 200/500, loss: 1.212
+epoch: 2/10, step: 300/500, loss: 1.077
+epoch: 2/10, step: 400/500, loss: 1.162
+epoch: 2/10, step: 500/500, loss: 0.981
+epoch: 3/10, step: 100/500, loss: 0.973
+epoch: 3/10, step: 200/500, loss: 1.060
+epoch: 3/10, step: 300/500, loss: 0.796
+epoch: 3/10, step: 400/500, loss: 0.735
+epoch: 3/10, step: 500/500, loss: 0.853
+epoch: 4/10, step: 100/500, loss: 0.643
+epoch: 4/10, step: 200/500, loss: 1.125
+epoch: 4/10, step: 300/500, loss: 0.809
+epoch: 4/10, step: 400/500, loss: 0.803
+epoch: 4/10, step: 500/500, loss: 0.829
+epoch: 5/10, step: 100/500, loss: 0.576
+epoch: 5/10, step: 200/500, loss: 0.820
+epoch: 5/10, step: 300/500, loss: 0.604
+epoch: 5/10, step: 400/500, loss: 0.545
+epoch: 5/10, step: 500/500, loss: 0.408
+epoch: 6/10, step: 100/500, loss: 0.603
+epoch: 6/10, step: 200/500, loss: 0.515
+epoch: 6/10, step: 300/500, loss: 0.823
+epoch: 6/10, step: 400/500, loss: 0.570
+epoch: 6/10, step: 500/500, loss: 0.411
+epoch: 7/10, step: 100/500, loss: 0.340
+epoch: 7/10, step: 200/500, loss: 0.402
+epoch: 7/10, step: 300/500, loss: 0.574
+epoch: 7/10, step: 400/500, loss: 0.260
+epoch: 7/10, step: 500/500, loss: 0.380
+epoch: 8/10, step: 100/500, loss: 0.440
+epoch: 8/10, step: 200/500, loss: 0.373
+epoch: 8/10, step: 300/500, loss: 0.313
+epoch: 8/10, step: 400/500, loss: 0.335
+epoch: 8/10, step: 500/500, loss: 0.339
+epoch: 9/10, step: 100/500, loss: 0.337
+epoch: 9/10, step: 200/500, loss: 0.580
+epoch: 9/10, step: 300/500, loss: 0.232
+epoch: 9/10, step: 400/500, loss: 0.259
+epoch: 9/10, step: 500/500, loss: 0.405
+epoch: 10/10, step: 100/500, loss: 0.443
+epoch: 10/10, step: 200/500, loss: 0.280
+epoch: 10/10, step: 300/500, loss: 0.219
+epoch: 10/10, step: 400/500, loss: 0.163
+epoch: 10/10, step: 500/500, loss: 0.288
+Training is completed
+model accuracy: 0.793
+predicted labels:
+ [3 8 8 0 6 6 1 2 3 1 4 9 5 7 9 8]
+actual labels:
+ [3 8 8 0 6 6 1 6 3 1 0 9 5 7 9 8]
