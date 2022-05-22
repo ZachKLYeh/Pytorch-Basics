@@ -21,6 +21,9 @@ class CNN(nn.Module):
         #we don't have to do softmax here, because we are use CrossEntropy, which softmax is included
         return output
 
+    def featuremap(self, x):
+        return self.Conv(x)
+
 #Build a vgg16 model
 class VGG16(nn.Module):
     def __init__(self):
