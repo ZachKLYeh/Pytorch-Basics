@@ -24,6 +24,7 @@ class CNN(nn.Module):
     def featuremap(self, x):
         return self.Conv(x)
 
+
 #Build a vgg16 model
 class VGG16(nn.Module):
     def __init__(self):
