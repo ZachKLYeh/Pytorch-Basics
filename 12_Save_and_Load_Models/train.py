@@ -35,6 +35,7 @@ model = model.CNN().to(device)   #accuracy around 60%
 
 #given model state path and checkpoint path
 MODEL_FILE = "CNN.pth"
+MODEL_STATE_FILE = "CNN_state_dict.pth"
 CHECKPOINT_FILE = "Checkpoint.pth"
 
 #Define loss function and optimizer
@@ -112,5 +113,9 @@ print('actual labels:\n', actual_labels.numpy().squeeze())
 
 print('saving model...')
 #save model in dictionary form
-torch.save(model.state_dict(), MODEL_FILE)
+torch.save(model.state_dict(), MODEL_STATE_FILE)
+print('model saved as:', MODEL_STATE_FILE)
+
+#save model in dictionary form
+torch.save(model, MODEL_FILE)
 print('model saved as:', MODEL_FILE)

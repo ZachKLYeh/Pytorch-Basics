@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
 import torchvision
@@ -12,8 +11,8 @@ import pandas as pd
 import seaborn as sn
 
 from torch.utils.tensorboard import SummaryWriter
-writer = SummaryWriter('runs/CIFAR10-simple-CNN')
-#writer = SummaryWriter('runs/CIFAR10-VGG-Pretrained')
+#writer = SummaryWriter('runs/CIFAR10-simple-CNN')
+writer = SummaryWriter('runs/CIFAR10-VGG-Pretrained')
 
 #Set device
 device = torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
@@ -56,10 +55,10 @@ img_grid = torchvision.utils.make_grid(example_images)
 writer.add_image('CIFAR10', img_grid)
 
 #Load model
-model = model.CNN().to(device)
-#model = model.VGG16().to(device)   
+#model = model.CNN().to(device)
+model = model.VGG16().to(device)   
 #let's freeze the pretrained layers
-#model.features.requires_grad_(False)
+model.features.requires_grad_(False)
 
 #Define loss function and optimizer
 criterion = nn.CrossEntropyLoss()
