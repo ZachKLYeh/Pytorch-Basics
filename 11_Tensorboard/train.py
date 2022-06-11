@@ -20,7 +20,7 @@ device = torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
 #declare parameters
 input_size = 32*32 #image size = 32x32 --flatten 1024
 n_classes = 10
-n_epoch = 10
+n_epoch = 1
 batch_size = 100
 learning_rate = 0.001
 
@@ -121,7 +121,7 @@ with torch.no_grad():
         #pr curve require a prediction in probability between[0, 1]. So we must implement with softmax
         #softmax for a batch
         pr_prob_batch = [nn.functional.softmax(outputs, dim=0) for outputs in output]
-        pr_pred.append(predicted)
+        pr_pred.append(labels)
         pr_prob.append(pr_prob_batch)
         #transform from tensor to numpy
         predicted = predicted.cpu().numpy()
